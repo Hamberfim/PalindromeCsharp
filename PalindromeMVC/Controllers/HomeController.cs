@@ -26,8 +26,8 @@ namespace PalindromeMVC.Controllers
         [HttpGet]
         public IActionResult Reverse()
         {
-            // set up instance of the Palidrome model-object
-            Palindrome model = new();
+            Palindrome model = new Palindrome();
+
             return View(model);
         }
 

@@ -32,10 +32,11 @@
             </div>
         </nav>
     </header>
-        <main id="content" class="flex-shrink-0">
-            <!-- Razor - Render the body of the page -->
-            @RenderBody()  
+    <div class="container-fluid">
+        <main role="main" id="content" class="flex-shrink-0" ">
+            @RenderBody()
         </main>
+    </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
@@ -45,6 +46,6 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+            @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
