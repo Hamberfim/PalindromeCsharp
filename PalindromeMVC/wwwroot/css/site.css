@@ -106,30 +106,6 @@ body {
     --white-color: #e7e7e7;
 }
 
-body {
-    color: var(--dark-color) !important;
-}
-
-nav {
-    padding: 0.25rem;
-    background-color: var(--dark-color) !important;
-}
-
-footer {
-    padding: 0.25rem;
-    background-color: var(--dark-color) !important;
-}
-
-    footer .social > a {
-        color: var(--white-color);
-        opacity: 0.75;
-    }
-
-        footer .social > a:hover {
-            color: var(--secondary-color);
-            opacity: 0.9;
-        }
-
 h1,
 h2,
 h3,
@@ -137,22 +113,6 @@ h4,
 h5,
 h6 {
     color: var(--primary-color);
-}
-
-.htmlicon {
-    color: orangered;
-}
-
-.cssicon {
-    color: blue;
-}
-
-.bsicon {
-    color: purple;
-}
-
-.jsicon {
-    color: #ff993b;
 }
 
 main > .container {
@@ -168,13 +128,4 @@ main > .container {
     left: 0;
     bottom: 0;
     width: 100%;
-}
-
-/* Prism CSS for Pre/Code tags */
-
-code[class*="language-"], pre[class*="language-"] {
-    white-space: pre-wrap;
-    word-break: break-all;
-    word-wrap: break-word;
-    font-size: 1.5rem;
 }
