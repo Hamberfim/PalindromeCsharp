@@ -23,6 +23,14 @@ namespace PalindromeMVC.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Reverse()
+        {
+            // set up instance of the Palidrome model-object
+            Palindrome model = new();
+            return View(model);
+        }
+
         public IActionResult Privacy()
         {
             return View();
