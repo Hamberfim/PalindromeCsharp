@@ -1,5 +1,5 @@
-### Palindrome C#
-C# MVC Palindrome app
+### MVC TacoCat - Palindrome
+C# MVC TacoCat app
 <br/><br/><br/><br/>
 ![Alt](https://github.com/Hamberfim/PalindromeCsharp/blob/main/HomeBranding.jpg "Pass Screen Shot")
 <br/><br/><br/><br/>
