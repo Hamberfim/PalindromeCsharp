@@ -35,6 +35,11 @@ namespace PalindromeMVC.Controllers
         {
             // declare member variables for this method
             string inputWord = palindrome.InputWord;
+            if (inputWord == null || inputWord.Length == 0)
+            {
+                palindrome.InputWord = "taco cat";
+                inputWord = palindrome.InputWord;
+            }
             string revWord = "";
 
             // start at the end of the word loop through the inputWord decrementing the index
@@ -54,7 +59,7 @@ namespace PalindromeMVC.Controllers
                 palindrome.Message = $"AWESOME, {palindrome.InputWord} is a palindrome!";
 
             }
-            else 
+            else
             {
                 palindrome.IsPalindrome = false;
                 palindrome.Message = $"SORRY, {palindrome.InputWord} is not a palindrome.";

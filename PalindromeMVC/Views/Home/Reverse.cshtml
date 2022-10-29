@@ -6,8 +6,10 @@
             <h1 class="font-weight-bold lh-1 mb-3">Palindrome Checker</h1>
             <h4 class="lead">A program to solve and present the question... "Is it a palindrome?"*</h4>
             <p class="pt-2">* Palindrome - a word, phrase, or sequence that reads the same backward as forward, e.g., taco cat, madam or nurses run. </p>
-            <h2 class="mt-5 border-2 border-bottom">Instructions</h2>
-            <p>Enter your string in the input field. Press the "Run Code" button and the javascript code will test and see if your input is a palindrome.</p>
+            <p>
+                If a string isn't entered in the input field, 'taco cat' will be used by default.</p>
+                    <h2 class="mt-5 border-2 border-bottom">Instructions</h2>
+                    <p>Enter your string in the input field. Press the "Run Code" button and the program will test and see if your input is a palindrome.</p>
         </div>
 
         <div class="col">
@@ -15,7 +17,7 @@
                 <h5>Enter a string</h5>
                 <form class="row gy-2 gx-3" asp-action="Reverse" asp-controller="Home" method="post">
                     <div class="col  pb-1">
-                        <input asp-for="InputWord" class="form-control" value="@Model.InputWord" placeholder="* type a word or phrase" />
+                        <input asp-for="InputWord" class="form-control" value="@Model.InputWord" placeholder="* taco cat" />
                     </div>
 
                     <div class="col-12 d-flex align-items-center justify-content-start justify-content-lg-end">
